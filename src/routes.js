@@ -8,6 +8,9 @@ export default class Routes extends Component {
     return (
       <Switch>
         <Route component={Deck} exact path="/photo-album" />
+        <Route exact path='/'>
+          <Redirect to='/photo-album' />
+        </Route>
       </Switch>
     );
   }
